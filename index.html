@@ -1,0 +1,107 @@
+<!-- Code by Byte Tutorials -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="weather-wrapper">
+      <div class="weather-wrapper-container">
+        <h3 class="header">Weather App <i class="ri-cloudy-fill"></i></h3>
+        <div>
+          <h1 class="temp">--&#176;</h1>
+          <div class="city-time">
+            <h1 class="city-name">-</h1>
+            <span class="time">--</span> -
+            <span class="date">--</span>
+          </div>
+          <div class="weather">
+            <img
+              src=" //cdn.weatherapi.com/weather/64x64/day/119.png"
+              class="w-icon"
+              alt=""
+            /><span class="condition">--</span>
+          </div>
+        </div>
+      </div>
+      <div class="search-container">
+        <form action="" id="location">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="search"
+            placeholder="Search Location..."
+          />
+          <button class="btn"><i class="fas fa-search"></i></button>
+        </form>
+        <ul class="w-details">
+          <h4>weather details</h4>
+          <li>
+            <span>cloudy</span>
+            <span class="cloud">--</span>
+          </li>
+          <li>
+            <span>humidity</span>
+            <span class="humidity">--</span>
+          </li>
+          <li>
+            <span>wind</span>
+            <span class="wind">--</span>
+          </li>
+          <li>
+            <span>wind direction</span>
+            <span class="winddir">--</span>
+          </li>
+          <li>
+            <span>wind degree</span>
+            <span class="wind_degree">--</span>
+          </li>
+
+          <li>
+            <span>feel</span>
+            <span class="feel">--</span>
+          </li>
+
+          <li>
+            <span>gust</span>
+            <span class="gust">--</span>
+          </li>
+
+          <li>
+            <span>heatindex</span>
+            <span class="heatindex">--</span>
+          </li>
+          <li>
+            <span>pressure</span>
+            <span class="pressure">--</span>
+          </li>
+        </ul>
+        <div class="weather-forecast" id="weather-forecast">
+          <h4>7 Days weather forecast</h4>
+          <div class="info" id="info"></div>
+        </div>
+      </div>
+    </div>
+    <div class="errormsg"></div>
+    <!-- search bar will be rendered here -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
